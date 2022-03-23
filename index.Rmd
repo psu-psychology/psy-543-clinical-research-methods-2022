@@ -96,7 +96,7 @@ slides > slide:not(.nobackground):after {
 
 ---
 
-```{r, fig.cap="[Baker, 2016](http://doi.org/10.1038/533452a)"}
+```{r, out.width="750px", fig.cap="[Baker, 2016](http://doi.org/10.1038/533452a)"}
 knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg")
 ```
 
@@ -188,34 +188,27 @@ knitr::include_graphics("https://www.rd.com/wp-content/uploads/2017/02/01-How-Ba
 
 # Discussion of Errington et al., 2021
 
-## What is your reaction to this?
+## [Errington et al., 2021](http://doi.org/10.7554/eLife.67995)
 
-> "*We conducted the Reproducibility Project: Cancer Biology to investigate the replicability of preclinical research in cancer biology. The initial aim of the project was to repeat 193 experiments from 53 high-impact papers, using an approach in which the experimental protocols and plans for data analysis had to be peer reviewed and accepted for publication before experimental work could begin. However, the various barriers and challenges we encountered while designing and conducting the experiments meant that we were only able to repeat 50 experiments from 23 papers.*"
-> --[Errington et al., 2021](http://doi.org/10.7554/eLife.67995)
-
----
-
-> "*First,...the data needed to compute effect sizes and conduct power analyses was publicly accessible for just 4 of 193 experiments. Moreover, despite contacting the authors of the original papers, we were unable to obtain these data for 68% of the experiments. Second, none of the 193 experiments were described in sufficient detail in the original paper to enable us to design protocols to repeat the experiments, so we had to seek clarifications from the original authors. While authors were extremely or very helpful for 41% of experiments, <span class="blue">they were minimally helpful for 9% of experiments, and not at all helpful (or did not respond to us) for 32% of experiments</span>. Third, once experimental work started, 67% of the peer-reviewed protocols required modifications to complete the research and just 41% of those modifications could be implemented...*"
-> --[Errington et al., 2021](http://doi.org/10.7554/eLife.67995)
+> "*We conducted the Reproducibility Project: Cancer Biology to investigate the replicability of preclinical research in cancer biology. The initial aim of the project was to repeat 193 experiments from 53 high-impact papers, using an approach in which the experimental protocols and plans for data analysis had to be peer reviewed and accepted for publication before experimental work could begin. However, the various barriers and challenges we encountered while designing and conducting the experiments meant that we were only able to repeat 50 experiments from 23 papers...*"
 
 ---
 
-## What is your reaction to this?
-
-> "*We conducted the Reproducibility Project: Cancer Biology to investigate the replicability of preclinical research in cancer biology. The initial aim of the project was to repeat 193 experiments from 53 high-impact papers, using an approach in which the experimental protocols and plans for data analysis had to be peer reviewed and accepted for publication before experimental work could begin. However, the various barriers and challenges we encountered while designing and conducting the experiments meant that we were only able to repeat 50 experiments from 23 papers.*"
-> --[Errington et al., 2021](http://doi.org/10.7554/eLife.67995)
+> "*...First,...the data needed to compute effect sizes and conduct power analyses was publicly accessible for just 4 of 193 experiments. Moreover, despite contacting the authors of the original papers, we were unable to obtain these data for 68% of the experiments...*"
 
 ---
 
-> "*First,...the data needed to compute effect sizes and conduct power analyses was publicly accessible for just 4 of 193 experiments. Moreover, despite contacting the authors of the original papers, we were unable to obtain these data for 68% of the experiments. Second, none of the 193 experiments were described in sufficient detail in the original paper to enable us to design protocols to repeat the experiments, so we had to seek clarifications from the original authors. While authors were extremely or very helpful for 41% of experiments, <span class="blue">they were minimally helpful for 9% of experiments, and not at all helpful (or did not respond to us) for 32% of experiments</span>. Third, once experimental work started, 67% of the peer-reviewed protocols required modifications to complete the research and just 41% of those modifications could be implemented. Cumulatively, these three factors limited the number of experiments that could be repeated. This experience draws attention to a basic and fundamental concern about replication – it is hard to assess whether reported findings are credible.*"
-> --[Errington et al., 2021](http://doi.org/10.7554/eLife.67995)
+> "*Second, none of the 193 experiments were described in sufficient detail in the original paper to enable us to design protocols to repeat the experiments, so we had to seek clarifications from the original authors. While authors were extremely or very helpful for 41% of experiments, they were minimally helpful for 9% of experiments, and not at all helpful (or did not respond to us) for 32% of experiments...*"
+
+---
+
+> "*Third, once experimental work started, 67% of the peer-reviewed protocols required modifications to complete the research and just 41% of those modifications could be implemented.*"
 
 ---
 
 > "*...Cumulatively, these three factors limited the number of experiments that could be repeated. This experience draws attention to a basic and fundamental concern about replication – it is hard to assess whether reported findings are credible.*"
-> --[Errington et al., 2021](http://doi.org/10.7554/eLife.67995)
 
-# Discussion of Munafò et al. 2017
+# Discussion of Munafò et al., 2017
 
 ---
 
@@ -231,7 +224,9 @@ knitr::include_graphics("img/munafo-table-1.png")
 
 ## Do these issues affect your research?
 
-# Silberzahn et al. 2018
+## Do the solutions seem reasonable and appropriate? Are you convinced?
+
+# Silberzahn et al., 2018
 
 ---
 
@@ -278,13 +273,15 @@ knitr::include_graphics("https://journals.sagepub.com/na101/home/literatum/publi
 >"*Transparency in data, methods, and process gives the rest of the community opportunity to see the decisions, question them, offer alternatives, and test these alternatives in further research.*"
 
 
-## Not just in psychology...
+## Not just in psychology...{.smaller}
 
 ```{r, fig.cap="[Botvinick-Nezer et al. 2020](https://doi.org/10.1038/s41586-020-2314-9)"}
 knitr::include_graphics("img/botvinick-nezer-nature-2020.png")
 ```
 
 ## Do related issues affect *your* research?
+
+## How could a 'many analysts' approach be helpful/harmful?
 
 # Practical Solutions
 
@@ -328,7 +325,9 @@ knitr::include_graphics("img/botvinick-nezer-nature-2020.png")
 
 ---
 
-<img src="http://smutch.github.io/VersionControlTutorial/_images/vc-xkcd.jpg" height = 500px/>
+```{r, out.width="900px"}
+knitr::include_graphics("http://smutch.github.io/VersionControlTutorial/_images/vc-xkcd.jpg")
+```
 
 ---
 
@@ -383,7 +382,7 @@ Data should be...
 
 - SPSS, SAS, R, Python
 - [Jupyter notebooks](https://jupyter.org/)
-- [Rmarkdown](https://rmarkdown.rstudio.com) via RStudio
+- [R Markdown](https://rmarkdown.rstudio.com) via RStudio
 
 ---
 
@@ -484,11 +483,9 @@ knitr::include_graphics("https://cdn.cos.io/media/images/registered_reports.widt
 
 <https://cos.io/rr/>
 
----
-
 ## Why preregister?
 
-- Nosek: "Don't fool yourself"
+- Nosek: "Don't fool yourself" ("...and you are the easiest to fool" -- R. Feynmann)
 - Separate *confirmatory* from *exploratory* analyses
 - Confirmatory (hypothesis-driven): *p*-hacking matters
 - Exploratory: *p*-values hard(er) to interpret
@@ -634,15 +631,15 @@ rog1@psu.edu</br>
 
 <https://gilmore-lab.github.io></br>
 
-<https://psu-psychology.github.io/psy-543-clinical-research-methods-2021/>
+<https://psu-psychology.github.io/psy-543-clinical-research-methods-2022/>
 </div>
 
 ---
 
 ## Stack
 
-This talk was produced on `r Sys.Date()` in [RStudio](http://rstudio.com) using R Markdown and the reveal.JS framework.
-The code and materials used to generate the slides may be found at <https://psu-psychology.github.io/psy-543-clinical-research-methods-2021/>.
+This talk was produced on `r Sys.Date()` in [RStudio](http://rstudio.com) using R Markdown and the ioslides framework.
+The code and materials used to generate the slides may be found at <https://psu-psychology.github.io/psy-543-clinical-research-methods-2022/>.
 Information about the R Session that produced the code is as follows:
 
 ```{r session-info}
