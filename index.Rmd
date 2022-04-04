@@ -9,8 +9,6 @@ output:
     widescreen: true
     incremental: false
     transition: default
-  pdf_document: default
-  github_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -96,7 +94,7 @@ slides > slide:not(.nobackground):after {
 
 ---
 
-```{r, out.width="750px", fig.cap="[Baker, 2016](http://doi.org/10.1038/533452a)"}
+```{r, out.width="600px", fig.cap="[Baker, 2016](http://doi.org/10.1038/533452a)"}
 knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg")
 ```
 
@@ -145,7 +143,7 @@ knitr::include_graphics("http://lh6.ggpht.com/_KVa1Tk_k1BU/TTjL-RSY_eI/AAAAAAAAB
 
 <small>[Goodman et al., 2016](http://doi.org/10.1126/scitranslmed.aaf5027)</small>
 
-## Is scientific research different from other (flawed) human endeavors?
+## How is scientific research different from other (flawed) human endeavors?
 
 ## Robert Merton
 
@@ -186,6 +184,8 @@ knitr::include_graphics("https://www.rd.com/wp-content/uploads/2017/02/01-How-Ba
 
 <small>[Mischel, 2009](https://www.psychologicalscience.org/observer/becoming-a-cumulative-science)</small>
 
+## Do you agree or disagree with Mischel?
+
 # Discussion of Errington et al., 2021
 
 ## [Errington et al., 2021](http://doi.org/10.7554/eLife.67995)
@@ -208,6 +208,8 @@ knitr::include_graphics("https://www.rd.com/wp-content/uploads/2017/02/01-How-Ba
 
 > "*...Cumulatively, these three factors limited the number of experiments that could be repeated. This experience draws attention to a basic and fundamental concern about replication – it is hard to assess whether reported findings are credible.*"
 
+## Is this satisfactory? Why or why not?
+
 # Discussion of Munafò et al., 2017
 
 ---
@@ -222,22 +224,42 @@ knitr::include_graphics("https://media.springernature.com/full/springer-static/i
 knitr::include_graphics("img/munafo-table-1.png")
 ```
 
-## Do these issues affect your research?
+## How do these issues affect your research?
 
 ## Do the solutions seem reasonable and appropriate? Are you convinced?
+
+## Do we have the power we need? {.smaller}
+
+```{r, fig.cap="[Szucs & Ioannides, 2017](http://doi.org/10.1371/journal.pbio.2000797)"}
+knitr::include_graphics("http://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2000797.g003&type=large")
+```
+
+---
+
+> "*Assuming a realistic range of prior probabilities for null hypotheses, false report probability is likely to exceed 50% for the whole literature.*"
+
+[Szucs & Ioannides, 2017](http://doi.org/10.1371/journal.pbio.2000797)
+
+---
+
+```{r, out.width="750px", fig.cap="[Marek et al. 2022](http://dx.doi.org/10.1038/s41586-022-04492-9)"}
+knitr::include_graphics("img/marek-et-al-2022.png")
+```
 
 # Silberzahn et al., 2018
 
 ---
 
->"*Twenty-nine teams involving 61 analysts used the same data set to address the same research question: whether soccer referees are more likely to give red cards to dark-skin-toned players than to light-skin-toned players.*"
+> "*Twenty-nine teams involving 61 analysts used the same data set to address the same research question: whether soccer referees are more likely to give red cards to dark-skin-toned players than to light-skin-toned players.*"
+
+[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)
 
 ## How much did results vary between different teams using the same data to test the same hypothesis?
 
 ---
 
 ```{r, fig.cap="[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)"}
-knitr::include_graphics("https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/ampa/2018/ampa_1_3/2515245917747646/20181024/images/large/10.1177_2515245917747646-table4.jpeg")
+knitr::include_graphics("img/silberzahn-table-1.jpeg")
 ```
 
 ## What were the consequences of this variability in analytic approaches?
@@ -245,7 +267,7 @@ knitr::include_graphics("https://journals.sagepub.com/na101/home/literatum/publi
 ---
 
 ```{r, fig.cap="[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)"}
-knitr::include_graphics("https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/ampa/2018/ampa_1_3/2515245917747646/20181024/images/medium/10.1177_2515245917747646-fig2.gif")
+knitr::include_graphics("img/silberzahn-fig-2.gif")
 ```
 
 ## Did the analysts’ beliefs regarding the hypothesis change over time?
@@ -253,37 +275,51 @@ knitr::include_graphics("https://journals.sagepub.com/na101/home/literatum/publi
 ---
 
 ```{r, fig.cap="[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)"}
-knitr::include_graphics("https://journals.sagepub.com/na101/home/literatum/publisher/sage/journals/content/ampa/2018/ampa_1_3/2515245917747646/20181024/images/medium/10.1177_2515245917747646-fig4.gif")
+knitr::include_graphics("img/silberzahn-fig-4.gif")
 ```
 
 ---
 
->"*Here, we have demonstrated that as a result of researchers’ choices and assumptions during analysis, variation in estimated effect sizes can emerge even when analyses use the same data. *"
+> "*Here, we have demonstrated that as a result of researchers’ choices and assumptions during analysis, variation in estimated effect sizes can emerge even when analyses use the same data. *"
+
+[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)
 
 ---
 
->"*These findings suggest that significant variation in the results of analyses of complex data may be difficult to avoid, even by experts with honest intentions.*"
+> "*These findings suggest that significant variation in the results of analyses of complex data may be difficult to avoid, even by experts with honest intentions.*"
+
+[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)
 
 ---
 
->"*The best defense against subjectivity in science is to expose it.*"
+> "*The best defense against subjectivity in science is to expose it.*"
+
+[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)
 
 ---
 
->"*Transparency in data, methods, and process gives the rest of the community opportunity to see the decisions, question them, offer alternatives, and test these alternatives in further research.*"
+> "*Transparency in data, methods, and process gives the rest of the community opportunity to see the decisions, question them, offer alternatives, and test these alternatives in further research.*"
 
+[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)
 
-## Not just in psychology...{.smaller}
+## Neuroscience, too...{.smaller}
 
 ```{r, fig.cap="[Botvinick-Nezer et al. 2020](https://doi.org/10.1038/s41586-020-2314-9)"}
 knitr::include_graphics("img/botvinick-nezer-nature-2020.png")
 ```
 
-## Do related issues affect *your* research?
-
 ## How could a 'many analysts' approach be helpful/harmful?
 
 # Practical Solutions
+
+## Some recommendations
+
+- Build upon existing (secondary) data and collect (much) larger samples
+- Share protocols and complete methods (consider video)
+- Share data (*FAIR*ly)
+- Script analyses and share analysis code
+- Preregister data analyses
+- Use version control
 
 ## What to share
 
@@ -423,13 +459,12 @@ source("R/Visualize_data.R")
 ...
 ```
 
-
 ## But my SPSS syntax file already does this
     
 - Great! How are you sharing these files?
 - (And how much would SPSS cost you if you had to buy it yourself?)
 
-## But I prefer {Python, Julia, Ruby, Matlab, ...}
+## But I prefer {Python, Julia, Ruby, MATLAB, ...}
 
 - Great! Let's talk about [R Markdown](https://rmarkdown.rstudio.com/)
 
@@ -450,12 +485,14 @@ source("R/Visualize_data.R")
 x <- rnorm(n = 100, mean = 0, sd = 1)
 hist(x)
 ```
+
 ---
 
 ```{r}
 x <- rnorm(n = 100, mean = 0, sd = 1)
 hist(x)
 ```
+
 ---
 
 The mean is `r mean(x)`, the range is [`r min(x)`, `r max(x)`].
@@ -472,6 +509,11 @@ The mean is `r mean(x)`, the range is [`r min(x)`, `r max(x)`].
 - Scriptable figures: [PDF](https://github.com/PLAY-behaviorome/site-demographics/blob/master/img/ed-attain-bars-plot-1.pdf) | [Rmd](https://raw.githubusercontent.com/PLAY-behaviorome/site-demographics/master/educational_attainment.Rmd)
 - Scriptable timelines from Datavyu files: [Example](https://github.com/PLAY-behaviorome/video-coding/blob/master/img/NYU019/time-line-plot-00-60-1.png?raw=true) | [Rmd](https://raw.githubusercontent.com/PLAY-behaviorome/video-coding/master/timeline.Rmd) 
 - Papers: [PDF](https://github.com/psu-psychology/r-bootcamp-2018/blob/master/talks/gilmore-hallquist-bootcamp-2018-papaja.pdf) | [Rmd](https://raw.githubusercontent.com/psu-psychology/r-bootcamp-2018/master/talks/gilmore-hallquist-bootcamp-2018-papaja.Rmd)
+
+## An alternative to R Markdown
+
+- [Jupyter notebooks](https://jupyter.org), [Jupyter Lab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)
+- Initially Python-focused, but has broadened to include other languages
 
 ## Registered reports and pre-registration
 
@@ -528,33 +570,17 @@ knitr::include_graphics("img/as-predicted-4.jpg")
 
 ---
 
->"To investigate whether,in psychology, preregistration lives up to that potential, we focused on all article spublished in Psychological Science with a preregisteredbadge between February 2015 and November 2017, and assessed the adherence to their corresponding preregistration plans. We observed deviations from the plan in all studies, and, more importantly, in all but one study, at least one of these deviations was not fully disclosed."
+> "*To investigate whether,in psychology, preregistration lives up to that potential, we focused on all article spublished in Psychological Science with a preregistered badge between February 2015 and November 2017, and assessed the adherence to their corresponding preregistration plans. We observed deviations from the plan in all studies, and, more importantly, in all but one study, at least one of these deviations was not fully disclosed.*"
 
 [Claesen et al., 2019](https://doi.org/10.31234/osf.io/d8wex)
 
 ## Large-scale replication studies
 
-## Studies are underpowered {.smaller}
-
-```{r, fig.cap="[Szucs & Ioannides, 2017](http://doi.org/10.1371/journal.pbio.2000797)"}
-knitr::include_graphics("http://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2000797.g003&type=large")
-```
-
----
-
-<div class="centered">
-> "*Assuming a realistic range of prior probabilities for null hypotheses, false report probability is likely to exceed 50% for the whole literature.*"
-
-[Szucs & Ioannides, 2017](http://doi.org/10.1371/journal.pbio.2000797)
-</div>
-
-## Many Labs
+## Many Labs {.smaller}
 
 ```{r, fig.cap="[Klein et al. 2014](http://econtent.hogrefe.com/doi/abs/10.1027/1864-9335/a000178)"}
 knitr::include_graphics("https://econtent.hogrefe.com/na101/home/literatum/publisher/hogrefe/journals/content/zsp/2014/zsp.2014.45.issue-3/1864-9335_a000178/20150727/images/large/zsp_45_3_142_fig1a.jpeg")
 ```
-
----
 
 ## Reproducibility Project: Psychology (RPP)
 
@@ -602,13 +628,13 @@ knitr::include_graphics("https://mfr.osf.io/export?url=https://osf.io/8pc9x/?act
 
 ---
 
->"*...the principles of human subject research require an analysis of both risks and benefits...such an analysis suggests that researchers may have a positive duty to share data in order to maximize the contribution that individual participants have made.*"
+> "*...the principles of human subject research require an analysis of both risks and benefits...such an analysis suggests that researchers may have a positive duty to share data in order to maximize the contribution that individual participants have made.*"
 
 <small>[Brakewood & Poldack, 2013](http://dx.doi.org/10.1016/j.neuroimage.2013.02.040)</small>
 
 ---
 
-```{r}
+```{r, out.width="850px"}
 knitr::include_graphics("http://cdn2.hubspot.net/hub/134568/file-1208368053-jpg/6-blind-men-hans.jpg")
 ```
 
@@ -616,7 +642,7 @@ knitr::include_graphics("http://cdn2.hubspot.net/hub/134568/file-1208368053-jpg/
 
 ---
 
-```{r}
+```{r, out.width="450px"}
 knitr::include_graphics("http://static.neatorama.com/images/2012-09/girl-hugging-elephant.jpg")
 ```
 
@@ -634,9 +660,7 @@ rog1@psu.edu</br>
 <https://psu-psychology.github.io/psy-543-clinical-research-methods-2022/>
 </div>
 
----
-
-## Stack
+## Resources
 
 This talk was produced on `r Sys.Date()` in [RStudio](http://rstudio.com) using R Markdown and the ioslides framework.
 The code and materials used to generate the slides may be found at <https://psu-psychology.github.io/psy-543-clinical-research-methods-2022/>.
