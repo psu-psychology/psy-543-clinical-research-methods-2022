@@ -3,6 +3,8 @@ title: "Reproducible and robust psychological science"
 subtitle: "PSY 543 • Spring 2022"
 author: "Rick Gilmore"
 date: "`r Sys.time()`"
+bibliography: bib/psu-repro.bib
+csl: bib/apa.csl
 output:
   ioslides_presentation:
     css: css/ioslides.css 
@@ -20,16 +22,30 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE,
 
 ## Acknowledgements
 
-- Thank you to NICHD, NIMH, NIDA, NIH, NSF, the Alfred P. Sloan Foundation, the James S. McDonnell Foundation, the LEGO Foundation, and the John S. Templeton Foundation
+- Thank you to NICHD, NIMH, NIDA, NIH OD, NSF, the Alfred P. Sloan Foundation, the James S. McDonnell Foundation, the LEGO Foundation, and the John S. Templeton Foundation
+
+---
+
+<div class="centered">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/DenverCP.JPG/266px-DenverCP.JPG" height=150px/>
+<img src="http://watson.brown.edu/ds/sites/all/themes/ds/img/header/brown_large.png" height=150px/>
+<img src="https://images.unsplash.com/photo-1617581629397-a72507c3de9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FzaGluZ3RvbiUyMGRjfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=900&q=60" height=150px/>
+<img src="https://ai.cs.cmu.edu/sites/default/files/CMU.png" height=150px/>
+<img src="http://onwardstate.com/wp-content/uploads/2014/10/93" height=150px/>
+<img src="img/sleic.png" height=150px/></br>
+<img src="https://nyu.databrary.org/web/images/logo/databrary-nav.svg" height=150px>
+</div>
+
+<!-- Gilmore photo biography -->
 
 ## Agenda
 
 - Prelude
 - Some questions to ponder
-- Discuss [Errington et al., 2021](http://doi.org/10.7554/eLife.67995)
-- Discuss [Munafò et al. 2017](http://www.nature.com/articles/s41562-016-0021)
-- Discuss [Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)
-- Discuss [Gilmore et al. 2018](https://doi.org/10.1177/2515245917746500)
+- Discuss [[@Errington2021-dp]](http://doi.org/10.7554/eLife.67995)
+- Discuss [[@munafo_manifesto_2017]](http://www.nature.com/articles/s41562-016-0021)
+- Discuss [[@Silberzahn2018-st]](https://doi.org/10.1177/2515245917747646)
+- Discuss [[@Gilmore2018-cb]](https://doi.org/10.1177/2515245917746500)
 
 ---
 
@@ -40,7 +56,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE,
 
 ---
 
-```{r, fig.cap="[Sah et al., 2020](https://doi.org/10.1128/MRA.00169-20)"}
+```{r, fig.cap="[[@Sah2020-ia[]](https://doi.org/10.1128/MRA.00169-20)"}
 knitr::include_graphics("img/covid-19-genome.png")
 ```
 
@@ -52,7 +68,7 @@ knitr::include_graphics("img/sah-et-al-pub-timeline.png")
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/66oNv_DJuPc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<small><https://www.youtube.com/embed/66oNv_DJuPc></small>
+<small>[[@NYU_Health_Sciences_Library2013-gp]](https://www.youtube.com/watch?v=66oNv_DJuPc)</small>
 
 # Questions to ponder
 
@@ -94,7 +110,7 @@ slides > slide:not(.nobackground):after {
 
 ---
 
-```{r, out.width="600px", fig.cap="[Baker, 2016](http://doi.org/10.1038/533452a)"}
+```{r, out.width="600px", fig.cap="[[@baker_1500_2016]](http://doi.org/10.1038/533452a)"}
 knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36716.1469695923!/image/reproducibility-graphic-online1.jpeg_gen/derivatives/landscape_630/reproducibility-graphic-online1.jpeg")
 ```
 
@@ -102,7 +118,7 @@ knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36716.1469695923!/i
 
 ---
 
-```{r, fig.cap="[Baker, 2016](http://doi.org/10.1038/533452a)"}
+```{r, fig.cap="[[@baker_1500_2016]](http://doi.org/10.1038/533452a)"}
 knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36718.1464174471!/image/reproducibility-graphic-online3.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online3.jpg")
 ```
 
@@ -112,7 +128,7 @@ knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36718.1464174471!/i
 
 ---
 
-```{r, fig.cap="[Baker, 2016](http://doi.org/10.1038/533452a)"}
+```{r, fig.cap="[[@baker_1500_2016]](http://doi.org/10.1038/533452a)"}
 knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36719.1464174488!/image/reproducibility-graphic-online4.jpg_gen/derivatives/landscape_630/reproducibility-graphic-online4.jpg")
 ```
 
@@ -123,7 +139,7 @@ knitr::include_graphics("http://www.nature.com/polopoly_fs/7.36719.1464174488!/i
 - Enough details about materials & methods recorded (& reported)
 - Same results with same materials & methods
 
-<small>[Goodman et al., 2016](http://doi.org/10.1126/scitranslmed.aaf5027)</small>
+<small>[[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)</small>
 
 ---
 
@@ -135,13 +151,13 @@ knitr::include_graphics("http://lh6.ggpht.com/_KVa1Tk_k1BU/TTjL-RSY_eI/AAAAAAAAB
 
 - Same results from independent study
 
-<small>([Goodman et al., 2016](http://doi.org/10.1126/scitranslmed.aaf5027))</small>
+<small>[[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)</small>
 
 ## *Inferential* reproducibility
 
 - Same inferences from one or more studies or reanalyses
 
-<small>[Goodman et al., 2016](http://doi.org/10.1126/scitranslmed.aaf5027)</small>
+<small>[[@goodman_what_2016]](http://doi.org/10.1126/scitranslmed.aaf5027)</small>
 
 ## How is scientific research different from other (flawed) human endeavors?
 
@@ -153,7 +169,7 @@ knitr::include_graphics("https://upload.wikimedia.org/wikipedia/en/0/08/Robert_K
 
 ---
 
-```{r}
+```{r, fig.cap="[[@Merton1979-le]](https://www.amazon.com/Sociology-Science-Theoretical-Empirical-Investigations/dp/0226520927)"}
 knitr::include_graphics("https://www.klinebooks.com/pictures/28217.jpg?v=1428617395")
 ```
 
@@ -176,37 +192,47 @@ knitr::include_graphics("https://www.rd.com/wp-content/uploads/2017/02/01-How-Ba
 
 > "*...psychologists tend to treat other peoples’ theories like toothbrushes; no self-respecting individual wants to use anyone else’s.*"
 
-<small>[Mischel 2009](https://www.psychologicalscience.org/observer/becoming-a-cumulative-science)</small>
+<small>[[@Mischel2011-br]](https://www.psychologicalscience.org/observer/becoming-a-cumulative-science)</small>
 
 ---
 
 > "*The toothbrush culture undermines the building of a genuinely cumulative science, encouraging more parallel play and solo game playing, rather than building on each other’s directly relevant best work.*"
 
-<small>[Mischel, 2009](https://www.psychologicalscience.org/observer/becoming-a-cumulative-science)</small>
+<small>[[@Mischel2011-br]](https://www.psychologicalscience.org/observer/becoming-a-cumulative-science)</small>
 
 ## Do you agree or disagree with Mischel?
 
 # Discussion of Errington et al., 2021
 
-## [Errington et al., 2021](http://doi.org/10.7554/eLife.67995)
+---
 
 > "*We conducted the Reproducibility Project: Cancer Biology to investigate the replicability of preclinical research in cancer biology. The initial aim of the project was to repeat 193 experiments from 53 high-impact papers, using an approach in which the experimental protocols and plans for data analysis had to be peer reviewed and accepted for publication before experimental work could begin. However, the various barriers and challenges we encountered while designing and conducting the experiments meant that we were only able to repeat 50 experiments from 23 papers...*"
+
+> [[@Errington2021-dp]](http://doi.org/10.7554/eLife.67995)
 
 ---
 
 > "*...First,...the data needed to compute effect sizes and conduct power analyses was publicly accessible for just 4 of 193 experiments. Moreover, despite contacting the authors of the original papers, we were unable to obtain these data for 68% of the experiments...*"
 
+> [[@Errington2021-dp]](http://doi.org/10.7554/eLife.67995)
+
 ---
 
 > "*Second, none of the 193 experiments were described in sufficient detail in the original paper to enable us to design protocols to repeat the experiments, so we had to seek clarifications from the original authors. While authors were extremely or very helpful for 41% of experiments, they were minimally helpful for 9% of experiments, and not at all helpful (or did not respond to us) for 32% of experiments...*"
+
+> [[@Errington2021-dp]](http://doi.org/10.7554/eLife.67995)
 
 ---
 
 > "*Third, once experimental work started, 67% of the peer-reviewed protocols required modifications to complete the research and just 41% of those modifications could be implemented.*"
 
+> [[@Errington2021-dp]](http://doi.org/10.7554/eLife.67995)
+
 ---
 
 > "*...Cumulatively, these three factors limited the number of experiments that could be repeated. This experience draws attention to a basic and fundamental concern about replication – it is hard to assess whether reported findings are credible.*"
+
+> [[@Errington2021-dp]](http://doi.org/10.7554/eLife.67995)
 
 ## Is this satisfactory? Why or why not?
 
@@ -214,13 +240,13 @@ knitr::include_graphics("https://www.rd.com/wp-content/uploads/2017/02/01-How-Ba
 
 ---
 
-```{r, fig.cap="[Munafò et al. 2017](http://doi.org/10.1038/s41562-016-0021)"}
+```{r, fig.cap="[[@munafo_manifesto_2017]](http://www.nature.com/articles/s41562-016-0021)"}
 knitr::include_graphics("https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41562-016-0021/MediaObjects/41562_2016_Article_BFs415620160021_Fig1_HTML.jpg")
 ```
 
 ---
 
-```{r, fig.cap="[Munafò et al. 2017](http://doi.org/10.1038/s41562-016-0021)"}
+```{r, fig.cap="[[@munafo_manifesto_2017]](http://www.nature.com/articles/s41562-016-0021)"}
 knitr::include_graphics("img/munafo-table-1.png")
 ```
 
@@ -228,9 +254,9 @@ knitr::include_graphics("img/munafo-table-1.png")
 
 ## Do the solutions seem reasonable and appropriate? Are you convinced?
 
-## Do we have the power we need? {.smaller}
+## Do we have the power we need?
 
-```{r, fig.cap="[Szucs & Ioannides, 2017](http://doi.org/10.1371/journal.pbio.2000797)"}
+```{r, fig.cap="[[@Szucs2017-fc]](http://doi.org/10.1371/journal.pbio.2000797)"}
 knitr::include_graphics("http://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.2000797.g003&type=large")
 ```
 
@@ -238,11 +264,11 @@ knitr::include_graphics("http://journals.plos.org/plosbiology/article/file?id=10
 
 > "*Assuming a realistic range of prior probabilities for null hypotheses, false report probability is likely to exceed 50% for the whole literature.*"
 
-[Szucs & Ioannides, 2017](http://doi.org/10.1371/journal.pbio.2000797)
+[[@Szucs2017-fc]](http://doi.org/10.1371/journal.pbio.2000797)
 
 ---
 
-```{r, out.width="750px", fig.cap="[Marek et al. 2022](http://dx.doi.org/10.1038/s41586-022-04492-9)"}
+```{r, out.width="750px", fig.cap="[[@Marek2022-vu]](http://dx.doi.org/10.1038/s41586-022-04492-9)"}
 knitr::include_graphics("img/marek-et-al-2022.png")
 ```
 
@@ -252,13 +278,13 @@ knitr::include_graphics("img/marek-et-al-2022.png")
 
 > "*Twenty-nine teams involving 61 analysts used the same data set to address the same research question: whether soccer referees are more likely to give red cards to dark-skin-toned players than to light-skin-toned players.*"
 
-[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)
+[[@Silberzahn2018-st]](https://doi.org/10.1177/2515245917747646)
 
 ## How much did results vary between different teams using the same data to test the same hypothesis?
 
 ---
 
-```{r, fig.cap="[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)"}
+```{r, fig.cap="[[@Silberzahn2018-st]](https://doi.org/10.1177/2515245917747646)"}
 knitr::include_graphics("img/silberzahn-table-1.jpeg")
 ```
 
@@ -266,7 +292,7 @@ knitr::include_graphics("img/silberzahn-table-1.jpeg")
 
 ---
 
-```{r, fig.cap="[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)"}
+```{r, fig.cap="[[@Silberzahn2018-st]](https://doi.org/10.1177/2515245917747646)"}
 knitr::include_graphics("img/silberzahn-fig-2.gif")
 ```
 
@@ -274,7 +300,7 @@ knitr::include_graphics("img/silberzahn-fig-2.gif")
 
 ---
 
-```{r, fig.cap="[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)"}
+```{r, fig.cap="[[@Silberzahn2018-st]](https://doi.org/10.1177/2515245917747646)"}
 knitr::include_graphics("img/silberzahn-fig-4.gif")
 ```
 
@@ -282,35 +308,35 @@ knitr::include_graphics("img/silberzahn-fig-4.gif")
 
 > "*Here, we have demonstrated that as a result of researchers’ choices and assumptions during analysis, variation in estimated effect sizes can emerge even when analyses use the same data. *"
 
-[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)
+> [[@Silberzahn2018-st]](https://doi.org/10.1177/2515245917747646)
 
 ---
 
 > "*These findings suggest that significant variation in the results of analyses of complex data may be difficult to avoid, even by experts with honest intentions.*"
 
-[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)
+> [[@Silberzahn2018-st]](https://doi.org/10.1177/2515245917747646)
 
 ---
 
 > "*The best defense against subjectivity in science is to expose it.*"
 
-[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)
+> [[@Silberzahn2018-st]](https://doi.org/10.1177/2515245917747646)
 
 ---
 
 > "*Transparency in data, methods, and process gives the rest of the community opportunity to see the decisions, question them, offer alternatives, and test these alternatives in further research.*"
 
-[Silberzahn et al. 2018](https://doi.org/10.1177/2515245917747646)
+> [[@Silberzahn2018-st]](https://doi.org/10.1177/2515245917747646)
 
-## Neuroscience, too...{.smaller}
+---
 
-```{r, fig.cap="[Botvinick-Nezer et al. 2020](https://doi.org/10.1038/s41586-020-2314-9)"}
+```{r, fig.cap="[[@Botvinik-Nezer2020-wr]](https://doi.org/10.1038/s41586-020-2314-9)"}
 knitr::include_graphics("img/botvinick-nezer-nature-2020.png")
 ```
 
 ## How could a 'many analysts' approach be helpful/harmful?
 
-# Practical Solutions
+# Practical Solutions [[@Gilmore2018-cb]](https://doi.org/10.1177/2515245917746500)
 
 ## Some recommendations
 
@@ -404,7 +430,7 @@ Data should be...
 - **I**nteroperable
 - **R**eusable
 
-[Wilkinson et al. 2016](https://doi.org/10.1038/sdata.2016.18)
+[[@Wilkinson2016-qr]](https://doi.org/10.1038/sdata.2016.18)
 
 ---
 
@@ -586,17 +612,17 @@ knitr::include_graphics("https://econtent.hogrefe.com/na101/home/literatum/publi
 
 > "*...The mean effect size (r) of the replication effects...was half the magnitude of the mean effect size of the original effects...*"
 
-<small>[Open Science Collaboration, 2015](http://science.sciencemag.org/content/349/6251/aac4716)</small>
+> [[@collaboration_estimating_2015]](http://science.sciencemag.org/content/349/6251/aac4716)</small>
 
 ---
 
 > "*...39% of effects were subjectively rated to have replicated the original result...*"
 
-<small>[Open Science Collaboration, 2015](http://science.sciencemag.org/content/349/6251/aac4716)</small>
+> [[@collaboration_estimating_2015]](http://science.sciencemag.org/content/349/6251/aac4716)</small>
 
 ---
 
-```{r, fig.cap="[Camerer et al. 2018](https://www.nature.com/articles/s41562-018-0399-z)"}
+```{r, fig.cap="[[@Camerer2018-tr]](https://www.nature.com/articles/s41562-018-0399-z)"}
 knitr::include_graphics("https://mfr.osf.io/export?url=https://osf.io/fg4d3/?action=download%26mode=render%26direct%26public_file=True&initialWidth=698&childId=mfrIframe&parentTitle=OSF+%7C+F1+-+EffectSizes.png&parentUrl=https://osf.io/fg4d3/&format=2400x2400.jpeg")
 ```
 
@@ -604,7 +630,7 @@ knitr::include_graphics("https://mfr.osf.io/export?url=https://osf.io/fg4d3/?act
 
 ---
 
-```{r, fig.cap="[Camerer et al. 2018](https://www.nature.com/articles/s41562-018-0399-z)"}
+```{r, fig.cap="[[@Camerer2018-tr]](https://www.nature.com/articles/s41562-018-0399-z)"}
 knitr::include_graphics("https://mfr.osf.io/export?url=https://osf.io/8pc9x/?action=download%26mode=render%26direct%26public_file=True&initialWidth=698&childId=mfrIframe&parentTitle=OSF+%7C+F4+-+PeerBeliefs.png&parentUrl=https://osf.io/8pc9x/&format=2400x2400.jpeg")
 ```
 
@@ -618,19 +644,19 @@ knitr::include_graphics("https://mfr.osf.io/export?url=https://osf.io/8pc9x/?act
 
 > "*The advancement of detailed and diverse knowledge about the development of the world’s children is essential for improving the health and well-being of humanity...*"
 
-<small>SRCD Task Force on Scientific Integrity and Openness</small>
+> [[@noauthor_undated-xv]](https://www.srcd.org/policy-scientific-integrity-transparency-and-openness)
 
 ---
 
 > "*We regard scientific integrity, transparency, and openness as essential for the conduct of research and its application to practice and policy...*"
 
-<small>SRCD Task Force on Scientific Integrity and Openness</small>
+> [[@noauthor_undated-xv]](https://www.srcd.org/policy-scientific-integrity-transparency-and-openness)
 
 ---
 
 > "*...the principles of human subject research require an analysis of both risks and benefits...such an analysis suggests that researchers may have a positive duty to share data in order to maximize the contribution that individual participants have made.*"
 
-<small>[Brakewood & Poldack, 2013](http://dx.doi.org/10.1016/j.neuroimage.2013.02.040)</small>
+> [[@Brakewood2013-wj]](http://dx.doi.org/10.1016/j.neuroimage.2013.02.040)</small>
 
 ---
 
@@ -669,3 +695,5 @@ Information about the R Session that produced the code is as follows:
 ```{r session-info}
 sessionInfo()
 ```
+
+## References {.smaller}
